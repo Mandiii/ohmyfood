@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-cta {
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  padding: 13px 20px;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 25px;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+footer img {
+  width: 40%;
+  margin-bottom: 16px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 7px 0;
+}
+footer a i {
+  margin-right: 5px;
+}
+
+header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+header img {
+  width: 40%;
+}
+
+.restaurant-card {
+  height: 250px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 18px;
+}
+.restaurant-card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.restaurant-card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.restaurant-card > div h3 {
+  margin: 0;
+}
+.restaurant-card > div p {
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 17px;
+}
+.restaurant-card > div .heart-container {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.restaurant-card > div .heart-container i {
+  font-size: 23px;
+  display: inline-block;
+  position: absolute;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant-card > div .heart-container i.fa-solid {
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+}
+.restaurant-card > div .heart-container i.fa-solid:hover {
+  opacity: 1;
+}
+
+.steps {
+  padding: 20px;
+}
+.steps_card {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  width: 96%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  font-weight: 500;
+  padding: 10px 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  margin-left: 4%;
+  margin-bottom: 25px;
+}
+.steps_card--number {
+  position: relative;
+  left: -10px;
+  background-color: #9356DC;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  line-height: 24px;
+}
+.steps_card i {
+  margin: 0 20px;
+  color: #7E7E7E;
+  font-size: 18px;
+}
+.steps_card--highlight {
+  background-color: #F5EDFF;
+}
+.steps_card--highlight i {
+  color: #9356DC;
+}
+
+.localisation {
+  background-color: #EAEAEA;
+  text-align: center;
+}
+.localisation p {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+}
+.localisation i {
+  margin-right: 17px;
+}
+
+.explore {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 40px 20px;
+}
+.explore h1 {
+  font-weight: 700;
+}
+.explore p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 50px 20px;
+}
+.restaurants-container {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants h2 {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+.localisation {
+    background-color: #EAEAEA;
+    text-align: center;
+    p {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    i {
+        margin-right: 17px;
+    }
+}
+.explore {
+    background-color: $bg;
+    text-align: center;
+    padding: 40px 20px;
+    h1 {
+        font-weight: 700;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+.restaurants {
+    background-color: $bg;
+    padding: 50px 20px;
+    &-container {
+        display: flex;
+        flex-direction: column;
+    }
+    h2 {
+        margin-top: 0;
+    }
+}

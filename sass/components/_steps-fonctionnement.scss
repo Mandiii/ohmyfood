@@ -1,0 +1,40 @@
+.steps {
+    padding: 20px;
+    &_card {
+        background-color: $bg;
+        border-radius: 20px;
+        width: 96%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: relative;        
+        font-weight: 500;
+        padding: 10px 0;
+        box-shadow: $shadow-cards;
+        margin-left: 4%;
+        margin-bottom: 25px;
+        &--number {
+            position: relative;
+            left: -10px;
+            background-color: $primary;
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            text-align: center;
+            color: #fff;
+            line-height: 24px;
+        }
+        i {
+            margin: 0 20px;
+            color: #7E7E7E;
+            font-size: 18px;
+        }
+        &--highlight {
+            background-color: #F5EDFF;
+            i {
+                color: $primary;
+            }
+
+        }
+    }
+}
