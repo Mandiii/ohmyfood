@@ -1,6 +1,49 @@
-.menu-item {
+.menu_item {
+    margin-bottom: 12px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: $shadow-cards;
-    padding: 10px;
+    box-shadow: $shadow-cards;    
+    display: flex;
+
+    .menu_item--text_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 12px;
+        padding-right: 30px;
+        width: 80%;
+
+        .menu_item--title_container {
+            width: 90%; 
+                
+            h3 {
+                margin: 0;
+                margin-bottom: 2px;
+            }        
+            p {
+                width: 90%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin: 0;
+                font-weight: 300;
+            }
+        }
+        .menu_item--price {
+            width: 10%;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+    .menu_item--checkmark {
+        background-color: $secondary;
+        width: 20%;
+        border-radius: 0 15px 15px 0;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
