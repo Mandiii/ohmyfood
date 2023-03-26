@@ -40,6 +40,11 @@ body {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   margin-top: 25px;
+  cursor: pointer;
+}
+.btn-cta:hover {
+  background-image: linear-gradient(200.64deg, #a16be0 -5.2%, #ff93e1 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 footer {
@@ -133,12 +138,24 @@ header i {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   margin-bottom: 18px;
+  position: relative;
 }
 .restaurant-card img {
   width: 100%;
   height: 160px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+}
+.restaurant-card .nouveau-tag {
+  width: 80px;
+  border-radius: 2px;
+  padding: 7px 9px;
+  font-size: 14px;
+  background-color: #99E2D0;
+  color: #278870;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .restaurant-card > div {
   display: flex;
@@ -255,6 +272,9 @@ section.menu {
   position: relative;
   top: -40px;
 }
+section.menu .menu_course {
+  margin-bottom: 40px;
+}
 section.menu h2 {
   font-size: 16px;
   font-weight: 300;
@@ -265,6 +285,11 @@ section.menu h2::after {
   display: block;
   border-bottom: 3px solid #99E2D0;
   margin-top: 6px;
+}
+section.menu .btn-cta {
+  width: 60%;
+  display: block;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

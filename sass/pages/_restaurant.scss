@@ -17,6 +17,9 @@ section.menu {
     padding: 17px;
     position: relative;
     top: -40px;
+    .menu_course {
+        margin-bottom: 40px;
+    }
     h2 {
         font-size: 16px;
         font-weight: 300;
@@ -27,5 +30,10 @@ section.menu {
             border-bottom: 3px solid $secondary;
             margin-top: 6px;
         }
+    }
+    .btn-cta {
+        width: 60%;
+        display: block;
+        margin: auto;
     }
 }

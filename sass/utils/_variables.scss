@@ -6,5 +6,7 @@ $secondary: #99E2D0;
 $white: #fff;
 
 $primary-gradient: #{linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%)};
+$primary-gradient--hover: #{linear-gradient(200.64deg, lighten(#9356DC, 5%) -5.2%, lighten(#FF79DA, 5%) 110.74%)};
+
 $shadow-cards: #{0px 4px 15px rgba(0, 0, 0, 0.15)};
 
