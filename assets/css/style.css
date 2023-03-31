@@ -291,6 +291,7 @@ header i {
   position: relative;
   display: inline-block;
   width: 100%;
+  color: #000;
 }
 @media (min-width: 1440px) {
   .restaurant-card {
@@ -369,10 +370,10 @@ header i {
   color: #7E7E7E;
   font-size: 18px;
 }
-.steps_card--highlight {
+.steps_card:hover {
   background-color: #F5EDFF;
 }
-.steps_card--highlight i {
+.steps_card:hover i {
   color: #9356DC;
 }
 @media (min-width: 1440px) {
@@ -516,37 +517,41 @@ section.menu .btn-cta {
   }
 }
 .spinner {
-  margin: 20vh;
+  margin: 40vh auto;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
 }
 .spinner div {
   width: 30px;
   height: 30px;
   background-color: #9356DC;
-  border-radius: 15px;
+  border-radius: 5px;
   display: inline-block;
-  margin-right: 30px;
   transform: scale(1);
   animation: spinner-scale 2s ease-in-out infinite;
 }
 .spinner div:nth-child(1) {
-  animation-delay: 0.5s;
+  animation-delay: 0s;
 }
 .spinner div:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 .spinner div:nth-child(3) {
-  animation-delay: 1.5s;
+  animation-delay: 0.7s;
 }
 
 @keyframes spinner-scale {
-  0% {
+  0%, 10% {
     scale: 1;
+    rotate: 0deg;
   }
-  50% {
-    scale: 1.5;
+  40% {
+    scale: 1.3;
   }
-  100% {
+  90%, 100% {
     scale: 1;
+    rotate: 180deg;
   }
 }
 

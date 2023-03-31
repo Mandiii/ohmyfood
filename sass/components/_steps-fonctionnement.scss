@@ -33,7 +33,7 @@
             color: #7E7E7E;
             font-size: 18px;
         }
-        &--highlight {
+        &:hover {
             background-color: #F5EDFF;
             i {
                 color: $primary;
