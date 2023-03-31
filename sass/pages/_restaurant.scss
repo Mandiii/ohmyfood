@@ -1,5 +1,10 @@
 .banner-img {
     width: 100%;
+    object-fit: cover;
+
+    @include desktop {
+        height: 450px;
+    }
 }
 .restaurant-page-title {
     display: flex;
@@ -9,16 +14,35 @@
         font-family: Shrikhand;
         font-size: 28px;
         font-weight: normal;
+
+        @include desktop {
+            margin-right: 24px;
+        }
+    }
+    @include desktop {
+        justify-content: center;
     }
 }
 section.menu {
     background-color: $bg;
     border-radius: 40px 40px 0 0;
-    padding: 17px;
+    padding: 10px 17px 40px 17px;
     position: relative;
-    top: -40px;
+    top: -80px;
+    margin-bottom: -80px;
+
+    @include desktop {
+        width: 80%;
+        margin: 0 auto -80px auto;
+        padding: 40px 15%;
+        
+    }
     .menu_course {
         margin-bottom: 40px;
+        .menu-items-container {
+            animation: bloc 1s forwards;
+        }
+
     }
     h2 {
         font-size: 16px;
@@ -32,8 +56,19 @@ section.menu {
         }
     }
     .btn-cta {
-        width: 60%;
+        width: 200px;
         display: block;
         margin: auto;
     }
+}
+@keyframes bloc {
+    0% {
+        transform: translateY(50%) ;
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
 }

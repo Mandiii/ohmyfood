@@ -8,12 +8,30 @@ header {
     position: relative;
     img {
         width: 40%;
+
+        @include tablet {
+            width: 30%;
+            margin: 20px 0;
+        }
+        @include desktop {
+            width: 20%;
+        }
     }
     i {
         position: absolute;
         left: 5%;
-        top: 20%;
-        font-size: 25px;
+        top: 35%;
+        font-size: 20px;
         color: $grey;
+
+        @include tablet {
+            font-size: 28px;
+        }
     }
+    
+}
+.spinner div {
+    width: 30px;
+    height: 30px;
+    background-color: $primary;
 }

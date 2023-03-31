@@ -3,16 +3,42 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 25px;
+
+    @include desktop {
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
     img {
         width: 40%;
         margin-bottom: 16px;
+
+        @include tablet {
+            width: 20%;
+        }
+        @include desktop {
+            width: 8%;
+            margin: 0 5%;
+        }
     }
     a {
         color: #fff;
         text-decoration: none;
-        margin: 7px 0;
+        margin: 7px 20px 7px 0;
         i {
             margin-right: 5px;
+        }
+        &:visited {
+            color: #fff;
         }
     }
 }

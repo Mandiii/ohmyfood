@@ -16,6 +16,10 @@
     padding: 40px 20px;
     h1 {
         font-weight: 700;
+
+        @include desktop {
+            font-size: 40px;
+        }
     }
     p {
         font-size: 18px;
@@ -25,9 +29,17 @@
 .restaurants {
     background-color: $bg;
     padding: 50px 20px;
+    @include desktop {
+        padding: 50px 10%;
+    }
     &-container {
         display: flex;
         flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     }
     h2 {
         margin-top: 0;

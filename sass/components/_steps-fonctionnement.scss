@@ -1,5 +1,9 @@
 .steps {
     padding: 20px;
+
+    @include desktop {
+       padding: 0 10%;    
+    }
     &_card {
         background-color: $bg;
         border-radius: 20px;
@@ -34,7 +38,11 @@
             i {
                 color: $primary;
             }
-
+        }
+    }
+    .steps-container {        
+        @include desktop {
+            display: flex;            
         }
     }
 }
