@@ -1,6 +1,7 @@
 .banner-img {
     width: 100%;
     object-fit: cover;
+    height: 40vh;
 
     @include desktop {
         height: 450px;
@@ -37,11 +38,8 @@ section.menu {
         padding: 40px 15%;
         
     }
-    .menu_course {
+    .entrees, .plats, .desserts {
         margin-bottom: 40px;
-        .menu-items-container {
-            animation: bloc 1s forwards;
-        }
 
     }
     h2 {
@@ -60,15 +58,4 @@ section.menu {
         display: block;
         margin: auto;
     }
-}
-@keyframes bloc {
-    0% {
-        transform: translateY(50%) ;
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-    
 }

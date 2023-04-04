@@ -9,25 +9,25 @@
     }
 }
 
-@for $i from 1 through 13 {
+// animations for menu items appear delay
+@for $i from 1 through 4 {
     .menu_item {
-      
-      // :nth-child(1-9) 
       &:nth-child(#{$i}) {
-        
-        // Delay the animation. Delay increases as items loop.
-        animation-delay: $i * 0.5s;
+        animation-delay: $i * 0.3s;
       }
     }
   }
-@for $i from 1 through 3 {
-    .menu_course .menu-items-container {
-      
-      // :nth-child(1-9) 
-      &:nth-of-type(#{$i}) {
-        
-        // Delay the animation. Delay increases as items loop.
-        animation-delay: $i * 0.5s;
+@for $i from 1 through 4 {
+  .plats .menu_item {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * 0.3s + 1s;
+      }
+    }
+  }
+@for $i from 1 through 4 {
+  .desserts .menu_item {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * 0.3s + 2s;
       }
     }
   }

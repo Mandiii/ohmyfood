@@ -5,18 +5,19 @@
     box-shadow: $shadow-cards;  
     opacity: 0;  
     display: flex;
-    animation: appear 2s forwards;    
+    justify-content: space-between;
+    animation: appear 1s forwards;    
 
     .menu_item--text_container {
         display: flex;
         justify-content: space-between;
         align-items: end;
         padding: 12px;
-        padding-right: 30px;
         width: 100%;
+        transition: width 0.4s ease-in-out;
 
         .menu_item--title_container {
-            width: 90%;
+            width: 85%;
                 
             h3 {
                 margin: 0;
@@ -35,17 +36,20 @@
             }
         }
         .menu_item--price {
-            width: 10%;
+            width: 15%;
             font-weight: 700;
             margin: 0;
         }
     }
+    &:hover > .menu_item--text_container {
+        width: calc(100% - 60px);
+    }
     &:hover > .menu_item--checkmark {
-        width: 20%;
+        width: 60px;
     }
     .menu_item--checkmark {
         background-color: $secondary;
-        width: 0%;
+        width: 0px;
         border-radius: 0 15px 15px 0;
         color: #fff;
         font-size: 20px;
@@ -53,20 +57,22 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        transition: width 0.5s ease-in-out;
+        transition: width 0.4s ease-in-out;
     }
 
 }
+
 @keyframes appear {
     0% {
         opacity: 0;
-        z-index: 0;
+        transform: translateY(50px);
+
     }
     50% {
         opacity: 0.35;
-        z-index: 100;
     }
     100% {
         opacity: 1;
+        transform: translateY(0px);
     }
 }
