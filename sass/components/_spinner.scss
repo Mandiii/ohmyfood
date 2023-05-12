@@ -1,40 +1,59 @@
-.spinner {
-    margin: 40vh auto;
+#page-loader {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
     display: flex;
-    justify-content: space-between;
-    width: 160px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    animation: removeLoader forwards;
+    animation-delay: 3s;
+    .spinner {
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
 
-    div {
-        width: 30px;
-        height: 30px;
-        background-color: $primary;
-        border-radius: 5px;
-        display: inline-block;
-        transform: scale(1);
-        animation: spinner-scale 2s ease-in-out infinite;
-        &:nth-child(1) {
-            animation-delay: 0s;
-        }
-        &:nth-child(2) {
-            animation-delay: 0.4s;
-        }
-        &:nth-child(3) {
-            animation-delay: 0.7s;
+        div {
+            width: 30px;
+            height: 30px;
+            background-color: $primary;
+            border-radius: 5px;
+            display: inline-block;
+            transform: scale(1);
+            animation: spinner-scale 2s ease-in-out infinite;
+            &:nth-child(1) {
+                animation-delay: 0s;
+            }
+            &:nth-child(2) {
+                animation-delay: 0.4s;
+            }
+            &:nth-child(3) {
+                animation-delay: 0.7s;
+            }
         }
     }
 }
-
+@keyframes removeLoader {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
 @keyframes spinner-scale {
     0%, 10% {
         scale: 1;
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
     40% {
         scale: 1.3;
     }
     90%, 100% {
         scale: 1;
-        rotate: 180deg;
+        transform: rotate(180deg);
     }
 }
     
